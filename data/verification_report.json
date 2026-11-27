@@ -1,0 +1,47 @@
+{
+  "counts": {
+    "destinations_total": 45,
+    "destinations_safe": 13,
+    "food": 15,
+    "crafts": 20,
+    "cultural_experiences": 13,
+    "gi_products": 40,
+    "media_assets": 12,
+    "sources_reference": 319
+  },
+  "destination_record_kinds": {
+    "point_destination": 22,
+    "craft_or_experience_cluster": 19,
+    "regional_search_area": 4
+  },
+  "verification_statuses": {
+    "destinations": {
+      "verified_official_source": 33,
+      "partially_verified": 8,
+      "listed_only": 3,
+      "needs_manual_verification": 1
+    },
+    "food": {
+      "verified_official_source": 15
+    },
+    "crafts": {
+      "verified_official_source": 19,
+      "partially_verified": 1
+    },
+    "cultural_experiences": {
+      "partially_verified": 1,
+      "verified_official_source": 12
+    },
+    "gi_products": {
+      "verified_in_uploaded_pdf": 40
+    },
+    "media_assets": {
+      "source_collection_found_not_asset_cleared": 9,
+      "individual_file_and_licence_checked": 3
+    }
+  },
+  "coordinate_issues": [],
+  "missing_source_urls": [],
+  "broken_links": [],
+  "all_checks_passed": true
+}
