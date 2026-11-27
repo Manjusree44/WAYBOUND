@@ -1,0 +1,2235 @@
+[
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0001",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://mapcarta.com/33399494",
+    "destination_id": "DST-TG-0001"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0001",
+    "source_field": "best_season_source_url",
+    "source_url": "https://www.incredibleindia.gov.in/en/rural-tourism/pembarthi",
+    "destination_id": "DST-TG-0001"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0001",
+    "source_field": "source_url_primary",
+    "source_url": "https://www.incredibleindia.gov.in/en/rural-tourism/pembarthi",
+    "destination_id": "DST-TG-0001"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0001",
+    "source_field": "source_url_secondary",
+    "source_url": "https://www.tourism.telangana.gov.in/page/arts-crafts",
+    "destination_id": "DST-TG-0001"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0002",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://mapcarta.com/N5515818537",
+    "destination_id": "DST-TG-0002"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0002",
+    "source_field": "source_url_primary",
+    "source_url": "https://rural.tourism.gov.in/Pochampally.html",
+    "destination_id": "DST-TG-0002"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0002",
+    "source_field": "source_url_secondary",
+    "source_url": "https://invest.telangana.gov.in/wp-content/uploads/2020/06/Know-More-Telangana-Textiles.pdf",
+    "destination_id": "DST-TG-0002"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0001",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://sd2.tourism.gov.in/DocumentRepoFiles/MasterPlan/MP585d47a0-85c9-4945-aac7-8ea0edbacdf0.pdf",
+    "destination_id": "DST-AP-0001"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0001",
+    "source_field": "best_season_source_url",
+    "source_url": "https://www.holidify.com/places/gandikota",
+    "destination_id": "DST-AP-0001"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0001",
+    "source_field": "source_url_primary",
+    "source_url": "https://kadapa.ap.gov.in/tourist-place/gandikota/",
+    "destination_id": "DST-AP-0001"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0001",
+    "source_field": "source_url_secondary",
+    "source_url": "https://sd2.tourism.gov.in/DocumentRepoFiles/MasterPlan/MP585d47a0-85c9-4945-aac7-8ea0edbacdf0.pdf",
+    "destination_id": "DST-AP-0001"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0002",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://www.mapsofindia.com/villages/andhra-pradesh/anakapalli/yelamanchili/eti-koppaka.html",
+    "destination_id": "DST-AP-0002"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0002",
+    "source_field": "source_url_primary",
+    "source_url": "https://anakapalli.ap.gov.in/odop-anakapalli/",
+    "destination_id": "DST-AP-0002"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0002",
+    "source_field": "source_url_secondary",
+    "source_url": "https://anakapalli.ap.gov.in/awards-2/",
+    "destination_id": "DST-AP-0002"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0003",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://en.wikipedia.org/wiki/Araku_Valley",
+    "destination_id": "DST-AP-0003"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0003",
+    "source_field": "source_url_primary",
+    "source_url": "https://allurisitharamaraju.ap.gov.in/tourism/",
+    "destination_id": "DST-AP-0003"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0003",
+    "source_field": "source_url_secondary",
+    "source_url": "https://allurisitharamaraju.ap.gov.in/cultural-tourism/",
+    "destination_id": "DST-AP-0003"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0004",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://krmb.gov.in/html/project24.html",
+    "destination_id": "DST-AP-0004"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0004",
+    "source_field": "source_url_primary",
+    "source_url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/mar/doc2025310517901.pdf",
+    "destination_id": "DST-AP-0004"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0004",
+    "source_field": "source_url_secondary",
+    "source_url": "https://tourism.telangana.gov.in/storage/app/media/Telangana_Tourism_Policy_2025-2030.pdf",
+    "destination_id": "DST-AP-0004"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0005",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://mapcarta.com/14865648",
+    "destination_id": "DST-AP-0005"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0005",
+    "source_field": "source_url_primary",
+    "source_url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/mar/doc2025310517901.pdf",
+    "destination_id": "DST-AP-0005"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0005",
+    "source_field": "source_url_secondary",
+    "source_url": "https://mapcarta.com/14865648",
+    "destination_id": "DST-AP-0005"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0006",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://cms.aptdc.in/fetch?payload=f5162f1c-36c9-416a-a675-bb2f380d24de.pdf",
+    "destination_id": "DST-AP-0006"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0006",
+    "source_field": "source_url_primary",
+    "source_url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/aug/doc202584599001.pdf",
+    "destination_id": "DST-AP-0006"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0006",
+    "source_field": "source_url_secondary",
+    "source_url": "https://tourism.ap.gov.in/",
+    "destination_id": "DST-AP-0006"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0007",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://en.wikipedia.org/wiki/Satyanarayana_Temple,_Annavaram",
+    "destination_id": "DST-AP-0007"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0007",
+    "source_field": "source_url_primary",
+    "source_url": "https://tourism.gov.in/sites/default/files/2024-07/PIB2038520.pdf",
+    "destination_id": "DST-AP-0007"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0007",
+    "source_field": "source_url_secondary",
+    "source_url": "https://tourism.ap.gov.in/",
+    "destination_id": "DST-AP-0007"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0008",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://mapcarta.com/33923070",
+    "destination_id": "DST-AP-0008"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0008",
+    "source_field": "source_url_primary",
+    "source_url": "https://tourism.gov.in/sites/default/files/2024-07/PIB2038520.pdf",
+    "destination_id": "DST-AP-0008"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0008",
+    "source_field": "source_url_secondary",
+    "source_url": "https://tourism.ap.gov.in/",
+    "destination_id": "DST-AP-0008"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0009",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://www.hundily.com/en/temples/vedagiri-lakshimi-narasimha-swamy-narasimhakonda-narasimhakondadevarapalem",
+    "destination_id": "DST-AP-0009"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0009",
+    "source_field": "source_url_primary",
+    "source_url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2024/jul/doc2024729358901.pdf",
+    "destination_id": "DST-AP-0009"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0009",
+    "source_field": "source_url_secondary",
+    "source_url": "https://www.hundily.com/en/temples/vedagiri-lakshimi-narasimha-swamy-narasimhakonda-narasimhakondadevarapalem",
+    "destination_id": "DST-AP-0009"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0003",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://mapcarta.com/W177760375",
+    "destination_id": "DST-TG-0003"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0003",
+    "source_field": "source_url_primary",
+    "source_url": "https://www.tourism.telangana.gov.in/page/vikarabad",
+    "destination_id": "DST-TG-0003"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0003",
+    "source_field": "source_url_secondary",
+    "source_url": "https://www.tourism.telangana.gov.in/page/adventure",
+    "destination_id": "DST-TG-0003"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0004",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://mapcarta.com/N344619886",
+    "destination_id": "DST-TG-0004"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0004",
+    "source_field": "source_url_primary",
+    "source_url": "https://tourism.gov.in/sites/default/files/2024-07/PIB2038520.pdf",
+    "destination_id": "DST-TG-0004"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0005",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://kamareddy.telangana.gov.in/tourism/",
+    "destination_id": "DST-TG-0005"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0005",
+    "source_field": "source_url_primary",
+    "source_url": "https://kamareddy.telangana.gov.in/tourism/",
+    "destination_id": "DST-TG-0005"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0005",
+    "source_field": "source_url_secondary",
+    "source_url": "https://kamareddy.telangana.gov.in/",
+    "destination_id": "DST-TG-0005"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0006",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://mapcarta.com/Nalgonda",
+    "destination_id": "DST-TG-0006"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0006",
+    "source_field": "source_url_primary",
+    "source_url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2024/jul/doc2024729358901.pdf",
+    "destination_id": "DST-TG-0006"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0006",
+    "source_field": "source_url_secondary",
+    "source_url": "https://mapcarta.com/Nalgonda",
+    "destination_id": "DST-TG-0006"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0010",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://mapcarta.com/33910524",
+    "destination_id": "DST-AP-0010"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0010",
+    "source_field": "source_url_primary",
+    "source_url": "https://allurisitharamaraju.ap.gov.in/forest-tourism/",
+    "destination_id": "DST-AP-0010"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0010",
+    "source_field": "source_url_secondary",
+    "source_url": "https://commons.wikimedia.org/wiki/Category:Borra_Caves",
+    "destination_id": "DST-AP-0010"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0011",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://mapcarta.com/N11664628769",
+    "destination_id": "DST-AP-0011"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0011",
+    "source_field": "source_url_primary",
+    "source_url": "https://allurisitharamaraju.ap.gov.in/tourism-2/",
+    "destination_id": "DST-AP-0011"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0011",
+    "source_field": "source_url_secondary",
+    "source_url": "https://mapcarta.com/N11664628769",
+    "destination_id": "DST-AP-0011"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0012",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://srisathyasai.ap.gov.in/tourism/",
+    "destination_id": "DST-AP-0012"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0012",
+    "source_field": "source_url_primary",
+    "source_url": "https://srisathyasai.ap.gov.in/tourism/",
+    "destination_id": "DST-AP-0012"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0012",
+    "source_field": "source_url_secondary",
+    "source_url": "https://commons.wikimedia.org/wiki/Category:Lepakshi",
+    "destination_id": "DST-AP-0012"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0013",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://en.wikipedia.org/wiki/Kondapalli",
+    "destination_id": "DST-AP-0013"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0013",
+    "source_field": "source_url_primary",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/44",
+    "destination_id": "DST-AP-0013"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0013",
+    "source_field": "source_url_secondary",
+    "source_url": "https://www.incredibleindia.gov.in/",
+    "destination_id": "DST-AP-0013"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0014",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://mapcarta.com/Srikalahasti",
+    "destination_id": "DST-AP-0014"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0014",
+    "source_field": "source_url_primary",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/28",
+    "destination_id": "DST-AP-0014"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0014",
+    "source_field": "source_url_secondary",
+    "source_url": "https://tourism.ap.gov.in/",
+    "destination_id": "DST-AP-0014"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0015",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://cdma.ap.gov.in/sites/default/files/EIA%26EMP%20Report%20Pedana.pdf",
+    "destination_id": "DST-AP-0015"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0015",
+    "source_field": "source_url_primary",
+    "source_url": "https://krishna.ap.gov.in/one-district-one-product/",
+    "destination_id": "DST-AP-0015"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0015",
+    "source_field": "source_url_secondary",
+    "source_url": "https://apsac.ap.gov.in/wp-content/uploads/2025/09/DSR-Reports/Krishna.pdf",
+    "destination_id": "DST-AP-0015"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0016",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://mapcarta.com/37714318",
+    "destination_id": "DST-AP-0016"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0016",
+    "source_field": "source_url_primary",
+    "source_url": "https://palnadu.ap.gov.in/odop/",
+    "destination_id": "DST-AP-0016"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0016",
+    "source_field": "source_url_secondary",
+    "source_url": "https://palnadu.ap.gov.in/odop2023/",
+    "destination_id": "DST-AP-0016"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0017",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://mapcarta.com/14896490",
+    "destination_id": "DST-AP-0017"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0017",
+    "source_field": "source_url_primary",
+    "source_url": "https://vizianagaram.ap.gov.in/tourist-place/bobbili-veena-artisans/",
+    "destination_id": "DST-AP-0017"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0017",
+    "source_field": "source_url_secondary",
+    "source_url": "https://vizianagaram.ap.gov.in/odopvzm/",
+    "destination_id": "DST-AP-0017"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0018",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://mapcarta.com/14853146",
+    "destination_id": "DST-AP-0018"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0018",
+    "source_field": "source_url_primary",
+    "source_url": "https://kakinada.ap.gov.in/about-district/one-district-one-product/",
+    "destination_id": "DST-AP-0018"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0018",
+    "source_field": "source_url_secondary",
+    "source_url": "https://handlooms.ap.gov.in/odopdistrict.html",
+    "destination_id": "DST-AP-0018"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0019",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://mapcarta.com/37718560",
+    "destination_id": "DST-AP-0019"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0019",
+    "source_field": "source_url_primary",
+    "source_url": "https://westgodavari.ap.gov.in/odop-west-godavari/",
+    "destination_id": "DST-AP-0019"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0020",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://mapcarta.com/37384924",
+    "destination_id": "DST-AP-0020"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0020",
+    "source_field": "source_url_primary",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/804",
+    "destination_id": "DST-AP-0020"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0020",
+    "source_field": "source_url_secondary",
+    "source_url": "https://ipindia.gov.in/pages/gi/track/registered-gi-list",
+    "destination_id": "DST-AP-0020"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0021",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://mapcarta.com/33921242",
+    "destination_id": "DST-AP-0021"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0021",
+    "source_field": "source_url_primary",
+    "source_url": "https://srikakulam.ap.gov.in/handicraft/",
+    "destination_id": "DST-AP-0021"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0021",
+    "source_field": "source_url_secondary",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/1049",
+    "destination_id": "DST-AP-0021"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0022",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://mapcarta.com/37714168",
+    "destination_id": "DST-AP-0022"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0022",
+    "source_field": "source_url_primary",
+    "source_url": "https://tourism.ap.gov.in/",
+    "destination_id": "DST-AP-0022"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0007",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://mapcarta.com/N7403431289",
+    "destination_id": "DST-TG-0007"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0007",
+    "source_field": "source_url_primary",
+    "source_url": "https://www.tourism.telangana.gov.in/destinations/ramappa",
+    "destination_id": "DST-TG-0007"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0007",
+    "source_field": "source_url_secondary",
+    "source_url": "https://commons.wikimedia.org/wiki/Category:Ramappa_Temple",
+    "destination_id": "DST-TG-0007"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0008",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://en.wikipedia.org/wiki/Laknavaram_Lake",
+    "destination_id": "DST-TG-0008"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0008",
+    "source_field": "source_url_primary",
+    "source_url": "https://mulugu.telangana.gov.in/tourist-place/laknavaram-lake/",
+    "destination_id": "DST-TG-0008"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0008",
+    "source_field": "source_url_secondary",
+    "source_url": "https://www.tourism.telangana.gov.in/page/adventure",
+    "destination_id": "DST-TG-0008"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0009",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://commons.wikimedia.org/wiki/Category:Kuntala_Waterfall",
+    "destination_id": "DST-TG-0009"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0009",
+    "source_field": "source_url_primary",
+    "source_url": "https://www.tourism.telangana.gov.in/page/nature",
+    "destination_id": "DST-TG-0009"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0009",
+    "source_field": "source_url_secondary",
+    "source_url": "https://commons.wikimedia.org/wiki/Category:Kuntala_Waterfall",
+    "destination_id": "DST-TG-0009"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0010",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://mapcarta.com/Bogatha_Waterfall",
+    "destination_id": "DST-TG-0010"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0010",
+    "source_field": "source_url_primary",
+    "source_url": "https://www.tourism.telangana.gov.in/page/adventure",
+    "destination_id": "DST-TG-0010"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0010",
+    "source_field": "source_url_secondary",
+    "source_url": "https://commons.wikimedia.org/wiki/Category:Waterfalls_in_Telangana",
+    "destination_id": "DST-TG-0010"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0011",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://indianwetlands.in/wp-content/uploads/library/1732615958.pdf",
+    "destination_id": "DST-TG-0011"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0011",
+    "source_field": "source_url_primary",
+    "source_url": "https://www.tourism.telangana.gov.in/page/nature",
+    "destination_id": "DST-TG-0011"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0012",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://kaalchakrajyotish.com/en/mandir/in-telangana-basara-gnana-saraswathi-temple/",
+    "destination_id": "DST-TG-0012"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0012",
+    "source_field": "source_url_primary",
+    "source_url": "https://www.tourism.telangana.gov.in/destinations/nirmal",
+    "destination_id": "DST-TG-0012"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0013",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://mapcarta.com/Nirmal",
+    "destination_id": "DST-TG-0013"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0013",
+    "source_field": "source_url_primary",
+    "source_url": "https://www.tourism.telangana.gov.in/destinations/nirmal",
+    "destination_id": "DST-TG-0013"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0013",
+    "source_field": "source_url_secondary",
+    "source_url": "https://www.telangana.gov.in/about/language-culture/",
+    "destination_id": "DST-TG-0013"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0014",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://mapcarta.com/14889316",
+    "destination_id": "DST-TG-0014"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0014",
+    "source_field": "source_url_primary",
+    "source_url": "https://invest.telangana.gov.in/wp-content/uploads/2020/06/Know-More-Telangana-Textiles.pdf",
+    "destination_id": "DST-TG-0014"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0014",
+    "source_field": "source_url_secondary",
+    "source_url": "https://invest.telangana.gov.in/sectors/textiles-and-apparel/",
+    "destination_id": "DST-TG-0014"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0015",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://mapcarta.com/14869324",
+    "destination_id": "DST-TG-0015"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0015",
+    "source_field": "source_url_primary",
+    "source_url": "https://narayanpet.telangana.gov.in/about-district/",
+    "destination_id": "DST-TG-0015"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0015",
+    "source_field": "source_url_secondary",
+    "source_url": "https://invest.telangana.gov.in/wp-content/uploads/2020/06/Know-More-Telangana-Textiles.pdf",
+    "destination_id": "DST-TG-0015"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0016",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://mapcarta.com/Siddipet",
+    "destination_id": "DST-TG-0016"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0016",
+    "source_field": "source_url_primary",
+    "source_url": "https://www.tourism.telangana.gov.in/experience/culture-history",
+    "destination_id": "DST-TG-0016"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0016",
+    "source_field": "source_url_secondary",
+    "source_url": "https://www.tourism.telangana.gov.in/page/arts-crafts",
+    "destination_id": "DST-TG-0016"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0017",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://mapcarta.com/37719288",
+    "destination_id": "DST-TG-0017"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0017",
+    "source_field": "source_url_primary",
+    "source_url": "https://www.telangana.gov.in/about/language-culture/",
+    "destination_id": "DST-TG-0017"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0017",
+    "source_field": "source_url_secondary",
+    "source_url": "https://mapcarta.com/37719288",
+    "destination_id": "DST-TG-0017"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0018",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://mapcarta.com/Warangal",
+    "destination_id": "DST-TG-0018"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0018",
+    "source_field": "source_url_primary",
+    "source_url": "https://www.tourism.telangana.gov.in/experience/culture-history",
+    "destination_id": "DST-TG-0018"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0018",
+    "source_field": "source_url_secondary",
+    "source_url": "https://mapcarta.com/Warangal",
+    "destination_id": "DST-TG-0018"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0019",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://ipass.telangana.gov.in/Industries/Library/DistrictNew/KARIMNAGAR.pdf",
+    "destination_id": "DST-TG-0019"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0019",
+    "source_field": "source_url_primary",
+    "source_url": "https://www.tourism.telangana.gov.in/page/arts-crafts",
+    "destination_id": "DST-TG-0019"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0019",
+    "source_field": "source_url_secondary",
+    "source_url": "https://ipass.telangana.gov.in/Industries/Library/DistrictNew/KARIMNAGAR.pdf",
+    "destination_id": "DST-TG-0019"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0020",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://mapcarta.com/Hyderabad",
+    "destination_id": "DST-TG-0020"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0020",
+    "source_field": "source_url_primary",
+    "source_url": "https://hyderabad.telangana.gov.in/culinary-delight/culinary-delight/",
+    "destination_id": "DST-TG-0020"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-TG-0020",
+    "source_field": "source_url_secondary",
+    "source_url": "https://www.tourism.telangana.gov.in/page/arts-crafts",
+    "destination_id": "DST-TG-0020"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0023",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://www.getty.edu/vow/TGNFullDisplay?english=Y&find=&nation=&place=&subjectid=1077280",
+    "destination_id": "DST-AP-0023"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0023",
+    "source_field": "source_url_primary",
+    "source_url": "https://tirupati.ap.gov.in/about-odop/",
+    "destination_id": "DST-AP-0023"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0023",
+    "source_field": "source_url_secondary",
+    "source_url": "https://www.getty.edu/vow/TGNFullDisplay?english=Y&find=&nation=&place=&subjectid=1077280",
+    "destination_id": "DST-AP-0023"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0024",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://cdma.ap.gov.in/sites/default/files/EIA%26EMP%20Report%20Mangalagiri.pdf",
+    "destination_id": "DST-AP-0024"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0024",
+    "source_field": "source_url_primary",
+    "source_url": "https://handlooms.ap.gov.in/odopdistrict.html",
+    "destination_id": "DST-AP-0024"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0024",
+    "source_field": "source_url_secondary",
+    "source_url": "https://cdma.ap.gov.in/sites/default/files/EIA%26EMP%20Report%20Mangalagiri.pdf",
+    "destination_id": "DST-AP-0024"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0025",
+    "source_field": "coordinate_source_url",
+    "source_url": "https://mapcarta.com/14891362",
+    "destination_id": "DST-AP-0025"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0025",
+    "source_field": "source_url_primary",
+    "source_url": "https://handlooms.ap.gov.in/faq.html",
+    "destination_id": "DST-AP-0025"
+  },
+  {
+    "dataset_file": "destinations.csv",
+    "record_id": "DST-AP-0025",
+    "source_field": "source_url_secondary",
+    "source_url": "https://mapcarta.com/14891362",
+    "destination_id": "DST-AP-0025"
+  },
+  {
+    "dataset_file": "food.csv",
+    "record_id": "FOD-AP-0001",
+    "source_field": "source_url_primary",
+    "source_url": "https://news.tirumala.org/divine-fragrance-of-tiarupati-laddu/",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "food.csv",
+    "record_id": "FOD-AP-0001",
+    "source_field": "source_url_secondary",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/121",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "food.csv",
+    "record_id": "FOD-AP-0002",
+    "source_field": "source_url_primary",
+    "source_url": "https://krishna.ap.gov.in/culinary-delight/bandar-laddu/",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "food.csv",
+    "record_id": "FOD-AP-0002",
+    "source_field": "source_url_secondary",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/433",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "food.csv",
+    "record_id": "FOD-AP-0003",
+    "source_field": "source_url_primary",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/804",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "food.csv",
+    "record_id": "FOD-AP-0003",
+    "source_field": "source_url_secondary",
+    "source_url": "https://ipindia.gov.in/pages/gi/track/registered-gi-list",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "food.csv",
+    "record_id": "FOD-TG-0001",
+    "source_field": "source_url_primary",
+    "source_url": "https://hyderabad.telangana.gov.in/culinary-delight/culinary-delight/",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "food.csv",
+    "record_id": "FOD-TG-0001",
+    "source_field": "source_url_secondary",
+    "source_url": "https://hyderabad.telangana.gov.in/culture-heritage/",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "food.csv",
+    "record_id": "FOD-TG-0002",
+    "source_field": "source_url_primary",
+    "source_url": "https://www.tourism.telangana.gov.in/page/where-eat",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "food.csv",
+    "record_id": "FOD-TG-0002",
+    "source_field": "source_url_secondary",
+    "source_url": "https://kamareddy.telangana.gov.in/culinary-delights/",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "food.csv",
+    "record_id": "FOD-TG-0003",
+    "source_field": "source_url_primary",
+    "source_url": "https://www.tourism.telangana.gov.in/page/where-eat",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "food.csv",
+    "record_id": "FOD-TG-0003",
+    "source_field": "source_url_secondary",
+    "source_url": "https://hyderabad.telangana.gov.in/culture-heritage/",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "food.csv",
+    "record_id": "FOD-TG-0004",
+    "source_field": "source_url_primary",
+    "source_url": "https://www.tourism.telangana.gov.in/page/where-eat",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "food.csv",
+    "record_id": "FOD-TG-0004",
+    "source_field": "source_url_secondary",
+    "source_url": "https://kamareddy.telangana.gov.in/culinary-delights/",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "food.csv",
+    "record_id": "FOD-TG-0005",
+    "source_field": "source_url_primary",
+    "source_url": "https://kamareddy.telangana.gov.in/culinary-delights/",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "food.csv",
+    "record_id": "FOD-TG-0005",
+    "source_field": "source_url_secondary",
+    "source_url": "https://www.tourism.telangana.gov.in/page/where-eat",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "food.csv",
+    "record_id": "FOD-TG-0006",
+    "source_field": "source_url_primary",
+    "source_url": "https://hyderabad.telangana.gov.in/culinary-delight/culinary-delight/",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "food.csv",
+    "record_id": "FOD-TG-0006",
+    "source_field": "source_url_secondary",
+    "source_url": "https://hyderabad.telangana.gov.in/culture-heritage/",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "food.csv",
+    "record_id": "FOD-AP-0005",
+    "source_field": "source_url_primary",
+    "source_url": "https://allurisitharamaraju.ap.gov.in/cultural-tourism/",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "food.csv",
+    "record_id": "FOD-AP-0005",
+    "source_field": "source_url_secondary",
+    "source_url": "https://allurisitharamaraju.ap.gov.in/tourism-2/",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "food.csv",
+    "record_id": "FOD-AP-0006",
+    "source_field": "source_url_primary",
+    "source_url": "https://kadapa.ap.gov.in/culinary-delight/gongura-pappu-chinthaaku-pappu/",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "food.csv",
+    "record_id": "FOD-AP-0006",
+    "source_field": "source_url_secondary",
+    "source_url": "https://kadapa.ap.gov.in/culinary-delights/",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "food.csv",
+    "record_id": "FOD-AP-0007",
+    "source_field": "source_url_primary",
+    "source_url": "https://kadapa.ap.gov.in/culinary-delights/",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "food.csv",
+    "record_id": "FOD-AP-0007",
+    "source_field": "source_url_secondary",
+    "source_url": "https://kadapa.ap.gov.in/importance/local/",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "food.csv",
+    "record_id": "FOD-AP-0008",
+    "source_field": "source_url_primary",
+    "source_url": "https://ntr.ap.gov.in/culinary-delight/pulihora/",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "food.csv",
+    "record_id": "FOD-AP-0009",
+    "source_field": "source_url_primary",
+    "source_url": "https://kadapa.ap.gov.in/culinary-delights/",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "food.csv",
+    "record_id": "FOD-AP-0010",
+    "source_field": "source_url_primary",
+    "source_url": "https://kadapa.ap.gov.in/culinary-delights/",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0002",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://invest.telangana.gov.in/wp-content/uploads/2020/06/Know-More-Telangana-Textiles.pdf",
+    "destination_id": "DST-TG-0002"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0284",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://invest.telangana.gov.in/wp-content/uploads/2020/06/Know-More-Telangana-Textiles.pdf",
+    "destination_id": "DST-TG-0002"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0002",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/4",
+    "destination_id": "DST-TG-0002"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0028",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/28",
+    "destination_id": "DST-AP-0014"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0028",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/28",
+    "destination_id": "DST-AP-0014"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0030",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/44",
+    "destination_id": "DST-AP-0013"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0030",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/44",
+    "destination_id": "DST-AP-0013"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0033",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://www.tourism.telangana.gov.in/page/arts-crafts",
+    "destination_id": "DST-TG-0019"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0033",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/53",
+    "destination_id": "DST-TG-0019"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0064",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://www.tourism.telangana.gov.in/destinations/nirmal",
+    "destination_id": "DST-TG-0013"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0091",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://www.tourism.telangana.gov.in/destinations/nirmal",
+    "destination_id": "DST-TG-0013"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0064",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/91",
+    "destination_id": "DST-TG-0013"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0071",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://krishna.ap.gov.in/one-district-one-product/",
+    "destination_id": "DST-AP-0015"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0071",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/90",
+    "destination_id": "DST-AP-0015"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0088",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://ipindia.gov.in/pages/gi/track/registered-gi-list",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0088",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/89",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0091",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/105",
+    "destination_id": "DST-TG-0013"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0092",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://www.telangana.gov.in/about/language-culture/",
+    "destination_id": "DST-TG-0013"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0092",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/106",
+    "destination_id": "DST-TG-0013"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0093",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/107",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0106",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://kakinada.ap.gov.in/about-district/one-district-one-product/",
+    "destination_id": "DST-AP-0018"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0106",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/122",
+    "destination_id": "DST-AP-0018"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0107",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://news.tirumala.org/divine-fragrance-of-tiarupati-laddu/",
+    "destination_id": "DST-AP-0007"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0107",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/121",
+    "destination_id": "DST-AP-0007"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0121",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://ipindia.gov.in/pages/gi/track/registered-gi-list",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0121",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/143",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0123",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://invest.telangana.gov.in/wp-content/uploads/2020/06/Know-More-Telangana-Textiles.pdf",
+    "destination_id": "DST-TG-0014"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0123",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/137",
+    "destination_id": "DST-TG-0014"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0131",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://hyderabad.telangana.gov.in/culinary-delight/culinary-delight/",
+    "destination_id": "DST-TG-0020"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0131",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/193",
+    "destination_id": "DST-TG-0020"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0139",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://www.tourism.telangana.gov.in/page/arts-crafts",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0139",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/190",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0140",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/194",
+    "destination_id": "DST-TG-0001"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0140",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/194",
+    "destination_id": "DST-TG-0001"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0146",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://ipindia.gov.in/pages/gi/track/registered-gi-list",
+    "destination_id": "DST-AP-0023"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0146",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/189",
+    "destination_id": "DST-AP-0023"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0157",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://vizianagaram.ap.gov.in/tourist-place/bobbili-veena-artisans/",
+    "destination_id": "DST-AP-0017"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0157",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/203",
+    "destination_id": "DST-AP-0017"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0162",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://www.tourism.telangana.gov.in/experience/culture-history",
+    "destination_id": "DST-TG-0016"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0162",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/188",
+    "destination_id": "DST-TG-0016"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0172",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://handlooms.ap.gov.in/odopdistrict.html",
+    "destination_id": "DST-AP-0024"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0172",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/198",
+    "destination_id": "DST-AP-0024"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0177",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://narayanpet.telangana.gov.in/about-district/",
+    "destination_id": "DST-TG-0015"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0177",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/214",
+    "destination_id": "DST-TG-0015"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0198",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://handlooms.ap.gov.in/odopdistrict.html",
+    "destination_id": "DST-AP-0025"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0198",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/215",
+    "destination_id": "DST-AP-0025"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0274",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://krishna.ap.gov.in/culinary-delight/bandar-laddu/",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0274",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/433",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0276",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://ipindia.gov.in/pages/gi/track/registered-gi-list",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0276",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/522",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0283",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://ipindia.gov.in/pages/gi/track/registered-gi-list",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0283",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/241",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0284",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/562",
+    "destination_id": "DST-TG-0002"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0286",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://palnadu.ap.gov.in/odop/",
+    "destination_id": "DST-AP-0016"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0286",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/481",
+    "destination_id": "DST-AP-0016"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0287",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://anakapalli.ap.gov.in/odop-anakapalli/",
+    "destination_id": "DST-AP-0002"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0287",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/482",
+    "destination_id": "DST-AP-0002"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0295",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://www.telangana.gov.in/about/language-culture/",
+    "destination_id": "DST-TG-0017"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0295",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/521",
+    "destination_id": "DST-TG-0017"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0296",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://www.tourism.telangana.gov.in/experience/culture-history",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0296",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/523",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0297",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://ipindia.gov.in/pages/gi/track/registered-gi-list",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0297",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/524",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0320",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/607",
+    "destination_id": "DST-AP-0003"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0320",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/607",
+    "destination_id": "DST-AP-0003"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0354",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://ipindia.gov.in/pages/gi/track/registered-gi-list",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0354",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/599",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0399",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://ipindia.gov.in/pages/gi/track/registered-gi-list",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0399",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/706",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0449",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/804",
+    "destination_id": "DST-AP-0020"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0449",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/804",
+    "destination_id": "DST-AP-0020"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0528",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://westgodavari.ap.gov.in/odop-west-godavari/",
+    "destination_id": "DST-AP-0019"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0528",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/713",
+    "destination_id": "DST-AP-0019"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0533",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://ipindia.gov.in/pages/gi/track/registered-gi-list",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0533",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/917",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0627",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://ipindia.gov.in/pages/gi/track/registered-gi-list",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0627",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/984",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0661",
+    "source_field": "destination_link_source_url",
+    "source_url": "https://srikakulam.ap.gov.in/handicraft/",
+    "destination_id": "DST-AP-0021"
+  },
+  {
+    "dataset_file": "gi_products.csv",
+    "record_id": "GI-0661",
+    "source_field": "source_url",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/1049",
+    "destination_id": "DST-AP-0021"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-TG-0001",
+    "source_field": "source_url_primary",
+    "source_url": "https://www.incredibleindia.gov.in/en/rural-tourism/pembarthi",
+    "destination_id": "DST-TG-0001"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-TG-0001",
+    "source_field": "source_url_secondary",
+    "source_url": "https://www.tourism.telangana.gov.in/page/arts-crafts",
+    "destination_id": "DST-TG-0001"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-TG-0002",
+    "source_field": "source_url_primary",
+    "source_url": "https://rural.tourism.gov.in/Pochampally.html",
+    "destination_id": "DST-TG-0002"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-TG-0002",
+    "source_field": "source_url_secondary",
+    "source_url": "https://invest.telangana.gov.in/wp-content/uploads/2020/06/Know-More-Telangana-Textiles.pdf",
+    "destination_id": "DST-TG-0002"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-AP-0001",
+    "source_field": "source_url_primary",
+    "source_url": "https://anakapalli.ap.gov.in/?p=29615",
+    "destination_id": "DST-AP-0002"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-AP-0001",
+    "source_field": "source_url_secondary",
+    "source_url": "https://anakapalli.ap.gov.in/odop-anakapalli/",
+    "destination_id": "DST-AP-0002"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-AP-0002",
+    "source_field": "source_url_primary",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/44",
+    "destination_id": "DST-AP-0013"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-AP-0002",
+    "source_field": "source_url_secondary",
+    "source_url": "https://tourism.ap.gov.in/",
+    "destination_id": "DST-AP-0013"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-AP-0003",
+    "source_field": "source_url_primary",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/28",
+    "destination_id": "DST-AP-0014"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-AP-0003",
+    "source_field": "source_url_secondary",
+    "source_url": "https://www.tourism.ap.gov.in/",
+    "destination_id": "DST-AP-0014"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-AP-0004",
+    "source_field": "source_url_primary",
+    "source_url": "https://krishna.ap.gov.in/one-district-one-product/",
+    "destination_id": "DST-AP-0015"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-AP-0004",
+    "source_field": "source_url_secondary",
+    "source_url": "https://apsac.ap.gov.in/wp-content/uploads/2025/09/DSR-Reports/Krishna.pdf",
+    "destination_id": "DST-AP-0015"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-AP-0005",
+    "source_field": "source_url_primary",
+    "source_url": "https://palnadu.ap.gov.in/odop/",
+    "destination_id": "DST-AP-0016"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-AP-0005",
+    "source_field": "source_url_secondary",
+    "source_url": "https://palnadu.ap.gov.in/odop2023/",
+    "destination_id": "DST-AP-0016"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-AP-0006",
+    "source_field": "source_url_primary",
+    "source_url": "https://vizianagaram.ap.gov.in/tourist-place/bobbili-veena-artisans/",
+    "destination_id": "DST-AP-0017"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-AP-0006",
+    "source_field": "source_url_secondary",
+    "source_url": "https://vizianagaram.ap.gov.in/odopvzm/",
+    "destination_id": "DST-AP-0017"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-AP-0007",
+    "source_field": "source_url_primary",
+    "source_url": "https://kakinada.ap.gov.in/about-district/one-district-one-product/",
+    "destination_id": "DST-AP-0018"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-AP-0007",
+    "source_field": "source_url_secondary",
+    "source_url": "https://handlooms.ap.gov.in/odopdistrict.html",
+    "destination_id": "DST-AP-0018"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-AP-0008",
+    "source_field": "source_url_primary",
+    "source_url": "https://westgodavari.ap.gov.in/odop-west-godavari/",
+    "destination_id": "DST-AP-0019"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-AP-0008",
+    "source_field": "source_url_secondary",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/713",
+    "destination_id": "DST-AP-0019"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-AP-0009",
+    "source_field": "source_url_primary",
+    "source_url": "https://srikakulam.ap.gov.in/handicraft/",
+    "destination_id": "DST-AP-0021"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-AP-0009",
+    "source_field": "source_url_secondary",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/1049",
+    "destination_id": "DST-AP-0021"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-TG-0003",
+    "source_field": "source_url_primary",
+    "source_url": "https://www.tourism.telangana.gov.in/page/arts-crafts",
+    "destination_id": "DST-TG-0019"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-TG-0003",
+    "source_field": "source_url_secondary",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/53",
+    "destination_id": "DST-TG-0019"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-TG-0004",
+    "source_field": "source_url_primary",
+    "source_url": "https://www.telangana.gov.in/about/language-culture/",
+    "destination_id": "DST-TG-0013"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-TG-0004",
+    "source_field": "source_url_secondary",
+    "source_url": "https://www.tourism.telangana.gov.in/destinations/nirmal",
+    "destination_id": "DST-TG-0013"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-TG-0005",
+    "source_field": "source_url_primary",
+    "source_url": "https://www.tourism.telangana.gov.in/destinations/nirmal",
+    "destination_id": "DST-TG-0013"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-TG-0005",
+    "source_field": "source_url_secondary",
+    "source_url": "https://telangana.gov.in/wp-content/uploads/2023/05/Telangana-Industries-Department-Annual-Report-2020-21.pdf",
+    "destination_id": "DST-TG-0013"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-TG-0006",
+    "source_field": "source_url_primary",
+    "source_url": "https://www.telangana.gov.in/about/language-culture/",
+    "destination_id": "DST-TG-0017"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-TG-0006",
+    "source_field": "source_url_secondary",
+    "source_url": "https://www.tourism.telangana.gov.in/page/arts-crafts",
+    "destination_id": "DST-TG-0017"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-TG-0007",
+    "source_field": "source_url_primary",
+    "source_url": "https://invest.telangana.gov.in/wp-content/uploads/2020/06/Know-More-Telangana-Textiles.pdf",
+    "destination_id": "DST-TG-0014"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-TG-0007",
+    "source_field": "source_url_secondary",
+    "source_url": "https://invest.telangana.gov.in/sectors/textiles-and-apparel/",
+    "destination_id": "DST-TG-0014"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-TG-0008",
+    "source_field": "source_url_primary",
+    "source_url": "https://narayanpet.telangana.gov.in/about-district/",
+    "destination_id": "DST-TG-0015"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-TG-0008",
+    "source_field": "source_url_secondary",
+    "source_url": "https://invest.telangana.gov.in/wp-content/uploads/2020/06/Know-More-Telangana-Textiles.pdf",
+    "destination_id": "DST-TG-0015"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-TG-0009",
+    "source_field": "source_url_primary",
+    "source_url": "https://www.tourism.telangana.gov.in/experience/culture-history",
+    "destination_id": "DST-TG-0016"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-TG-0009",
+    "source_field": "source_url_secondary",
+    "source_url": "https://ipass.telangana.gov.in/Industries/Library/TG_ODOP%20List_Dec%202024.pdf",
+    "destination_id": "DST-TG-0016"
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-TG-0010",
+    "source_field": "source_url_primary",
+    "source_url": "https://www.tourism.telangana.gov.in/experience/culture-history",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-TG-0010",
+    "source_field": "source_url_secondary",
+    "source_url": "https://handtex.telangana.gov.in/ContentData.aspx?MainMenu=4&SubMenuId=4&SubMenuName=FAQ%27s",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-TG-0011",
+    "source_field": "source_url_primary",
+    "source_url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/599",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "crafts.csv",
+    "record_id": "CRF-TG-0011",
+    "source_field": "source_url_secondary",
+    "source_url": "https://www.tourism.telangana.gov.in/page/arts-crafts",
+    "destination_id": ""
+  },
+  {
+    "dataset_file": "cultural_experiences.csv",
+    "record_id": "CEX-TG-0001",
+    "source_field": "source_url_primary",
+    "source_url": "https://www.incredibleindia.gov.in/en/rural-tourism/pembarthi",
+    "destination_id": "DST-TG-0001"
+  },
+  {
+    "dataset_file": "cultural_experiences.csv",
+    "record_id": "CEX-TG-0001",
+    "source_field": "source_url_secondary",
+    "source_url": "https://www.tourism.telangana.gov.in/page/arts-crafts",
+    "destination_id": "DST-TG-0001"
+  },
+  {
+    "dataset_file": "cultural_experiences.csv",
+    "record_id": "CEX-AP-0001",
+    "source_field": "source_url_primary",
+    "source_url": "https://allurisitharamaraju.ap.gov.in/cultural-tourism/",
+    "destination_id": "DST-AP-0003"
+  },
+  {
+    "dataset_file": "cultural_experiences.csv",
+    "record_id": "CEX-AP-0001",
+    "source_field": "source_url_secondary",
+    "source_url": "https://allurisitharamaraju.ap.gov.in/tourism/",
+    "destination_id": "DST-AP-0003"
+  },
+  {
+    "dataset_file": "cultural_experiences.csv",
+    "record_id": "CEX-AP-0002",
+    "source_field": "source_url_primary",
+    "source_url": "https://allurisitharamaraju.ap.gov.in/tourism-2/",
+    "destination_id": "DST-AP-0011"
+  },
+  {
+    "dataset_file": "cultural_experiences.csv",
+    "record_id": "CEX-AP-0002",
+    "source_field": "source_url_secondary",
+    "source_url": "https://allurisitharamaraju.ap.gov.in/cultural-tourism/",
+    "destination_id": "DST-AP-0011"
+  },
+  {
+    "dataset_file": "cultural_experiences.csv",
+    "record_id": "CEX-AP-0003",
+    "source_field": "source_url_primary",
+    "source_url": "https://allurisitharamaraju.ap.gov.in/tourism/",
+    "destination_id": "DST-AP-0003"
+  },
+  {
+    "dataset_file": "cultural_experiences.csv",
+    "record_id": "CEX-AP-0004",
+    "source_field": "source_url_primary",
+    "source_url": "https://krishna.ap.gov.in/one-district-one-product/",
+    "destination_id": "DST-AP-0015"
+  },
+  {
+    "dataset_file": "cultural_experiences.csv",
+    "record_id": "CEX-AP-0005",
+    "source_field": "source_url_primary",
+    "source_url": "https://palnadu.ap.gov.in/odop/",
+    "destination_id": "DST-AP-0016"
+  },
+  {
+    "dataset_file": "cultural_experiences.csv",
+    "record_id": "CEX-AP-0005",
+    "source_field": "source_url_secondary",
+    "source_url": "https://palnadu.ap.gov.in/odop2023/",
+    "destination_id": "DST-AP-0016"
+  },
+  {
+    "dataset_file": "cultural_experiences.csv",
+    "record_id": "CEX-AP-0006",
+    "source_field": "source_url_primary",
+    "source_url": "https://vizianagaram.ap.gov.in/tourist-place/bobbili-veena-artisans/",
+    "destination_id": "DST-AP-0017"
+  },
+  {
+    "dataset_file": "cultural_experiences.csv",
+    "record_id": "CEX-AP-0006",
+    "source_field": "source_url_secondary",
+    "source_url": "https://vizianagaram.ap.gov.in/bobbilicircuittourism/",
+    "destination_id": "DST-AP-0017"
+  },
+  {
+    "dataset_file": "cultural_experiences.csv",
+    "record_id": "CEX-AP-0007",
+    "source_field": "source_url_primary",
+    "source_url": "https://srikakulam.ap.gov.in/handicraft/",
+    "destination_id": "DST-AP-0021"
+  },
+  {
+    "dataset_file": "cultural_experiences.csv",
+    "record_id": "CEX-TG-0002",
+    "source_field": "source_url_primary",
+    "source_url": "https://tourism.telangana.gov.in/assets/img/pdf/Booklet%20for%20FlipBookLow.pdf",
+    "destination_id": "DST-TG-0002"
+  },
+  {
+    "dataset_file": "cultural_experiences.csv",
+    "record_id": "CEX-TG-0002",
+    "source_field": "source_url_secondary",
+    "source_url": "https://rural.tourism.gov.in/Pochampally.html",
+    "destination_id": "DST-TG-0002"
+  },
+  {
+    "dataset_file": "cultural_experiences.csv",
+    "record_id": "CEX-TG-0003",
+    "source_field": "source_url_primary",
+    "source_url": "https://www.tourism.telangana.gov.in/destinations/nirmal",
+    "destination_id": "DST-TG-0013"
+  },
+  {
+    "dataset_file": "cultural_experiences.csv",
+    "record_id": "CEX-TG-0003",
+    "source_field": "source_url_secondary",
+    "source_url": "https://www.telangana.gov.in/about/language-culture/",
+    "destination_id": "DST-TG-0013"
+  },
+  {
+    "dataset_file": "cultural_experiences.csv",
+    "record_id": "CEX-TG-0004",
+    "source_field": "source_url_primary",
+    "source_url": "https://www.tourism.telangana.gov.in/experience/culture-history",
+    "destination_id": "DST-TG-0018"
+  },
+  {
+    "dataset_file": "cultural_experiences.csv",
+    "record_id": "CEX-TG-0006",
+    "source_field": "source_url_primary",
+    "source_url": "https://www.tourism.telangana.gov.in/experience/culture-history",
+    "destination_id": "DST-TG-0018"
+  },
+  {
+    "dataset_file": "cultural_experiences.csv",
+    "record_id": "CEX-TG-0004",
+    "source_field": "source_url_secondary",
+    "source_url": "https://www.telangana.gov.in/about/language-culture/",
+    "destination_id": "DST-TG-0018"
+  },
+  {
+    "dataset_file": "cultural_experiences.csv",
+    "record_id": "CEX-TG-0005",
+    "source_field": "source_url_primary",
+    "source_url": "https://www.telangana.gov.in/about/language-culture/",
+    "destination_id": "DST-TG-0017"
+  },
+  {
+    "dataset_file": "cultural_experiences.csv",
+    "record_id": "CEX-TG-0005",
+    "source_field": "source_url_secondary",
+    "source_url": "https://www.tourism.telangana.gov.in/page/arts-crafts",
+    "destination_id": "DST-TG-0017"
+  },
+  {
+    "dataset_file": "cultural_experiences.csv",
+    "record_id": "CEX-TG-0006",
+    "source_field": "source_url_secondary",
+    "source_url": "https://handtex.telangana.gov.in/ContentData.aspx?MainMenu=4&SubMenuId=4&SubMenuName=FAQ%27s",
+    "destination_id": "DST-TG-0018"
+  },
+  {
+    "dataset_file": "media_assets.csv",
+    "record_id": "MED-AP-0001",
+    "source_field": "source_page_url",
+    "source_url": "https://commons.wikimedia.org/wiki/Category:Gandikota",
+    "destination_id": "DST-AP-0001"
+  },
+  {
+    "dataset_file": "media_assets.csv",
+    "record_id": "MED-AP-0002",
+    "source_field": "source_page_url",
+    "source_url": "https://commons.wikimedia.org/wiki/Category:Araku_Valley",
+    "destination_id": "DST-AP-0003"
+  },
+  {
+    "dataset_file": "media_assets.csv",
+    "record_id": "MED-AP-0003",
+    "source_field": "source_page_url",
+    "source_url": "https://commons.wikimedia.org/wiki/Category:Borra_Caves",
+    "destination_id": "DST-AP-0010"
+  },
+  {
+    "dataset_file": "media_assets.csv",
+    "record_id": "MED-AP-0004",
+    "source_field": "source_page_url",
+    "source_url": "https://commons.wikimedia.org/wiki/Category:Kondapalli_toys",
+    "destination_id": "DST-AP-0013"
+  },
+  {
+    "dataset_file": "media_assets.csv",
+    "record_id": "MED-TG-0001",
+    "source_field": "source_page_url",
+    "source_url": "https://commons.wikimedia.org/wiki/Category:Ramappa_Temple",
+    "destination_id": "DST-TG-0007"
+  },
+  {
+    "dataset_file": "media_assets.csv",
+    "record_id": "MED-TG-0002",
+    "source_field": "source_page_url",
+    "source_url": "https://commons.wikimedia.org/wiki/Category:Kuntala_Waterfall",
+    "destination_id": "DST-TG-0009"
+  },
+  {
+    "dataset_file": "media_assets.csv",
+    "record_id": "MED-TG-0003",
+    "source_field": "source_page_url",
+    "source_url": "https://commons.wikimedia.org/wiki/Category:Pochampally",
+    "destination_id": "DST-TG-0002"
+  },
+  {
+    "dataset_file": "media_assets.csv",
+    "record_id": "MED-AP-0005",
+    "source_field": "source_page_url",
+    "source_url": "https://commons.wikimedia.org/wiki/Category:Lepakshi",
+    "destination_id": "DST-AP-0012"
+  },
+  {
+    "dataset_file": "media_assets.csv",
+    "record_id": "MED-AP-0006",
+    "source_field": "source_page_url",
+    "source_url": "https://commons.wikimedia.org/wiki/Category:Crafts_of_Andhra_Pradesh",
+    "destination_id": "DST-AP-0002"
+  },
+  {
+    "dataset_file": "media_assets.csv",
+    "record_id": "MED-AP-0010",
+    "source_field": "file_url",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Araku_Valley.jpg/960px-Araku_Valley.jpg",
+    "destination_id": "DST-AP-0003"
+  },
+  {
+    "dataset_file": "media_assets.csv",
+    "record_id": "MED-AP-0010",
+    "source_field": "source_page_url",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Araku_Valley.jpg",
+    "destination_id": "DST-AP-0003"
+  },
+  {
+    "dataset_file": "media_assets.csv",
+    "record_id": "MED-AP-0010",
+    "source_field": "licence_url",
+    "source_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "destination_id": "DST-AP-0003"
+  },
+  {
+    "dataset_file": "media_assets.csv",
+    "record_id": "MED-AP-0011",
+    "source_field": "file_url",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Lepakshi_temple.jpg/960px-Lepakshi_temple.jpg",
+    "destination_id": "DST-AP-0004"
+  },
+  {
+    "dataset_file": "media_assets.csv",
+    "record_id": "MED-AP-0011",
+    "source_field": "source_page_url",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Lepakshi_temple.jpg",
+    "destination_id": "DST-AP-0004"
+  },
+  {
+    "dataset_file": "media_assets.csv",
+    "record_id": "MED-AP-0011",
+    "source_field": "licence_url",
+    "source_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "destination_id": "DST-AP-0004"
+  },
+  {
+    "dataset_file": "media_assets.csv",
+    "record_id": "MED-TG-0012",
+    "source_field": "file_url",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Ramappa_Temple.png/960px-Ramappa_Temple.png",
+    "destination_id": "DST-TG-0008"
+  },
+  {
+    "dataset_file": "media_assets.csv",
+    "record_id": "MED-TG-0012",
+    "source_field": "source_page_url",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ramappa_Temple.png",
+    "destination_id": "DST-TG-0008"
+  },
+  {
+    "dataset_file": "media_assets.csv",
+    "record_id": "MED-TG-0012",
+    "source_field": "licence_url",
+    "source_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "destination_id": "DST-TG-0008"
+  }
+]
