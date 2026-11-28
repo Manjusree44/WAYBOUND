@@ -21,8 +21,8 @@ class Settings(BaseSettings):
     APP_TITLE: str = "WAYBOUND API"
     APP_DESCRIPTION: str = (
         "Discover beyond the famous. Experience the local. "
-        "Community-powered tourism discovery for lesser-known "
-        "destinations, regional food, traditional crafts, "
+        "Community-powered tourism discovery for regional "
+        "destinations, food, traditional crafts, "
         "festivals and cultural experiences."
     )
     APP_VERSION: str = "0.1.0"
@@ -30,18 +30,18 @@ class Settings(BaseSettings):
     # --- Data directory ---
     # Points to the folder that contains the CSV files.
     # Path is resolved relative to the project root.
-    DATA_DIR: Path = Path(__file__).resolve().parent.parent / "data"
+    DATA_DIR: Path = Path(__file__).resolve().parent / "data"
 
     # --- CORS (Cross-Origin Resource Sharing) ---
     # Which frontend origins are allowed to call this API.
-    # During development the frontend typically runs on
-    # localhost:3000 or localhost:5173 (Vite default).
-    # "*" means "allow everything" — fine for local dev,
-    # but should be restricted before production.
     CORS_ORIGINS: list[str] = [
         "http://localhost:3000",
         "http://localhost:5173",
         "http://localhost:5174",
+        "http://localhost:5500",
+        "http://127.0.0.1:5500",
+        "http://localhost:8000",
+        "http://127.0.0.1:8000",
     ]
 
 

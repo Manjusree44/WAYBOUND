@@ -81,6 +81,19 @@ def export_json(data_dir: str | Path = "data", out_dir: str | Path | None = None
         bundle["counts"][name] = len(rows)
         bundle["datasets"][name] = rows
 
+    submissions_path = base_dir / "submissions.json"
+    submissions: list[dict] = []
+    if submissions_path.exists():
+        submissions = json.loads(submissions_path.read_text(encoding="utf-8"))
+    submissions_target = json_dir / "submissions.json"
+    submissions_target.write_text(
+        json.dumps(submissions, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+    written["submissions"] = submissions_target
+    bundle["counts"]["submissions"] = len(submissions)
+    bundle["datasets"]["submissions"] = submissions
+
     bundle_path = json_dir / "waybound_data.json"
     bundle_path.write_text(json.dumps(bundle, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     written["bundle"] = bundle_path
@@ -132,6 +145,29 @@ def build_sqlite(data_dir: str | Path = "data", db_path: str | Path | None = Non
 
         for idx_name, table, cols in INDEX_DEFINITIONS:
             cur.execute(f'CREATE INDEX "{idx_name}" ON "{table}" ({cols})')
+
+        submissions_path = base_dir / "submissions.json"
+        if submissions_path.exists():
+            submissions = json.loads(submissions_path.read_text(encoding="utf-8"))
+            if not isinstance(submissions, list):
+                raise ValueError("submissions.json must contain a JSON list")
+            cur.execute(
+                'CREATE TABLE "submissions" '
+                "(id TEXT PRIMARY KEY, name TEXT, description TEXT, submission_type TEXT, "
+                "state TEXT, district TEXT, location TEXT, latitude REAL, longitude REAL, "
+                "contact TEXT, source TEXT, status TEXT, created_at TEXT, updated_at TEXT)"
+            )
+            columns = (
+                "id", "name", "description", "submission_type", "state", "district",
+                "location", "latitude", "longitude", "contact", "source", "status",
+                "created_at", "updated_at",
+            )
+            placeholders = ", ".join("?" for _ in columns)
+            cur.executemany(
+                f'INSERT INTO "submissions" ({", ".join(columns)}) VALUES ({placeholders})',
+                [tuple(row.get(column) for column in columns) for row in submissions],
+            )
+            cur.execute('CREATE INDEX "idx_submissions_status" ON "submissions" (status)')
 
         conn.commit()
     finally:

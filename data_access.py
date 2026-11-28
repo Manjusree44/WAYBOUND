@@ -5,7 +5,7 @@ from pathlib import Path
 
 from fastapi import HTTPException
 
-from app.config import settings
+from config import settings
 
 DATASETS = {
     "destinations": "destinations.csv",
