@@ -2,9 +2,11 @@
 
 from __future__ import annotations
 
+import json
 import math
 import re
 from collections.abc import Callable
+from pathlib import Path
 from typing import Any
 
 from app.services.submission_service import (
@@ -13,10 +15,66 @@ from app.services.submission_service import (
     enrich_approved_submission,
     get_store,
 )
+from config import settings
 from data_access import DATASETS, load_dataset
 
 EARTH_RADIUS_KM = 6371.0
 ROUTE_EARTH_RADIUS_KM = 6371.0088
+
+
+def _is_http_url(value: Any) -> bool:
+    url = str(value or "").strip()
+    return url.startswith("https://") or url.startswith("http://")
+
+
+def _load_low_visibility_evidence() -> dict[str, dict[str, Any]]:
+    """Load optional low-visibility evidence annotations from the sidecar JSON file."""
+    path = Path(settings.LOW_VISIBILITY_EVIDENCE_PATH)
+    if not path.exists():
+        return {}
+    raw = path.read_text(encoding="utf-8").strip()
+    if not raw:
+        return {}
+    data = json.loads(raw)
+    if not isinstance(data, dict):
+        return {}
+    return {
+        str(k): v
+        for k, v in data.items()
+        if isinstance(v, dict)
+    }
+
+
+def _apply_hidden_gem(
+    record: dict[str, Any],
+    record_id: str | None,
+    evidence_map: dict[str, dict[str, Any]],
+) -> tuple[dict[str, Any], bool]:
+    """Mark hidden_gem=True only for non-community records with valid URL + note evidence."""
+    if record.get("verified") is False:
+        return record, False
+
+    entry = evidence_map.get(str(record_id or "").strip(), {})
+    url = str(
+        entry.get("low_visibility_evidence_url")
+        or record.get("low_visibility_evidence_url")
+        or ""
+    ).strip()
+    note = str(
+        entry.get("low_visibility_note")
+        or record.get("low_visibility_note")
+        or ""
+    ).strip()
+
+    if _is_http_url(url) and bool(note):
+        enriched = {
+            **record,
+            "low_visibility_evidence_url": url,
+            "low_visibility_note": note,
+        }
+        return enriched, True
+
+    return record, False
 
 
 class DiscoveryError(ValueError):
@@ -542,6 +600,7 @@ def _corridor_records(
     contributions: dict[tuple[str, str], list[dict[str, Any]]],
     sub_type: str,
     id_field: str,
+    evidence_map: dict[str, dict[str, Any]],
 ) -> list[dict[str, Any]]:
     matched = []
     for record in records:
@@ -557,12 +616,17 @@ def _corridor_records(
 
         if candidates:
             dist, location_destination_id = min(candidates, key=lambda pair: pair[0])
+            enriched_record = _with_contributions(record, contributions, sub_type, id_field)
+            enriched_record, is_hidden_gem = _apply_hidden_gem(
+                enriched_record, record.get(id_field), evidence_map
+            )
             matched.append(
                 {
-                    "record": _with_contributions(record, contributions, sub_type, id_field),
+                    "record": enriched_record,
                     "distance_to_route_km": round(dist, 3),
                     "location_destination_id": location_destination_id,
                     "popularity_status": "not_assessed",
+                    "hidden_gem": is_hidden_gem,
                 }
             )
     return matched
@@ -595,6 +659,7 @@ def _append_community_corridor(
                     "distance_to_route_km": round(dist, 3),
                     "location_destination_id": location_destination_id,
                     "popularity_status": "not_assessed",
+                    "hidden_gem": False,
                 }
             )
 
@@ -646,6 +711,7 @@ def discover_along_route(
 
     approved = _load_approved_submissions(store)
     standalone, contributions = _split_community_records(approved)
+    evidence_map = _load_low_visibility_evidence()
 
     half_width_km = corridor_width_km / 2.0
     active_exp_cats = (
@@ -669,14 +735,19 @@ def discover_along_route(
             continue
         dist = point_to_polyline_km(coords[0], coords[1], line_coords)
         if dist <= half_width_km:
+            enriched_record = _with_contributions(
+                row, contributions, "destination", "destination_id"
+            )
+            enriched_record, is_hidden_gem = _apply_hidden_gem(
+                enriched_record, row.get("destination_id"), evidence_map
+            )
             results["destinations"].append(
                 {
-                    "record": _with_contributions(
-                        row, contributions, "destination", "destination_id"
-                    ),
+                    "record": enriched_record,
                     "distance_to_route_km": round(dist, 3),
                     "location_destination_id": row["destination_id"],
                     "popularity_status": "not_assessed",
+                    "hidden_gem": is_hidden_gem,
                 }
             )
 
@@ -694,6 +765,7 @@ def discover_along_route(
                     "distance_to_route_km": round(dist, 3),
                     "location_destination_id": item["id"],
                     "popularity_status": "not_assessed",
+                    "hidden_gem": False,
                 }
             )
 
@@ -707,6 +779,7 @@ def discover_along_route(
             contributions,
             "food",
             "food_id",
+            evidence_map,
         )
         _append_community_corridor(
             results["food"],
@@ -729,6 +802,7 @@ def discover_along_route(
             contributions,
             "craft",
             "craft_id",
+            evidence_map,
         )
         _append_community_corridor(
             results["crafts"],
@@ -758,6 +832,7 @@ def discover_along_route(
             contributions,
             "cultural_experience",
             "experience_id",
+            evidence_map,
         )
         _append_community_corridor(
             results["cultural_experiences"],

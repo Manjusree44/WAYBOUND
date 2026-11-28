@@ -31,6 +31,9 @@ class Settings(BaseSettings):
     # Points to the folder that contains the CSV files.
     # Path is resolved relative to the project root.
     DATA_DIR: Path = Path(__file__).resolve().parent / "data"
+    LOW_VISIBILITY_EVIDENCE_PATH: Path = (
+        Path(__file__).resolve().parent / "metadata" / "low_visibility_evidence.json"
+    )
 
     # --- CORS (Cross-Origin Resource Sharing) ---
     # Which frontend origins are allowed to call this API.

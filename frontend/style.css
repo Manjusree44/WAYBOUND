@@ -122,6 +122,7 @@ input[type=range]{accent-color:var(--terra);padding:0;border:0;box-shadow:none}
 .corridor-item{padding:.55rem 0;border-top:1px solid var(--line);font-size:.88rem}
 .corridor-item:first-of-type{border-top:0;padding-top:0}
 .badge-unverified{display:inline-block;padding:.15rem .5rem;border-radius:99px;background:var(--terra-soft);color:var(--terra);font-size:.72rem;font-weight:700}
+.badge-hidden-gem{display:inline-block;padding:.15rem .5rem;border-radius:99px;background:var(--forest-soft);color:var(--forest-deep);font-size:.72rem;font-weight:700}
 .admin-list{display:flex;flex-direction:column;gap:1rem}
 .admin-card h3{margin:.15rem 0 .35rem;color:var(--forest-deep)}
 .admin-actions{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;margin-top:.8rem}

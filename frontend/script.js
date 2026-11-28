@@ -1068,7 +1068,14 @@ function renderCorridorGroup(title, items, nameFn) {
     const regional = rec.record_kind === "regional_search_area"
       ? ' <span class="badge-unverified">Regional area, not a single attraction</span>'
       : "";
-    return `<div class="corridor-item"><b>${esc(nameFn(rec))}</b>${badge}${regional}<br><small class="muted">${esc(dist)}</small></div>`;
+    const isHiddenGem = item.hidden_gem === true;
+    const gemBadge = isHiddenGem
+      ? ' <span class="badge-hidden-gem">Hidden gem</span>'
+      : "";
+    const gemContext = isHiddenGem
+      ? `<br><small class="muted">${esc(rec.low_visibility_note || "")} ${link(rec.low_visibility_evidence_url, "Evidence source")}</small>`
+      : `<br><small class="muted">Local experience along your route</small>`;
+    return `<div class="corridor-item"><b>${esc(nameFn(rec))}</b>${gemBadge}${badge}${regional}${gemContext}<br><small class="muted">${esc(dist)}</small></div>`;
   }).join("") + `</div>`;
 }
 
