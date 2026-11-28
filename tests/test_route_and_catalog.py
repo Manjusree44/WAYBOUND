@@ -11,13 +11,17 @@ from app.services.submission_service import SubmissionStore, get_store
 from main import app
 
 
+ADMIN_HEADERS = {"X-Admin-Token": "test-admin-token"}
+
+
 @pytest.fixture
 def store(tmp_path: Path) -> SubmissionStore:
     return SubmissionStore(tmp_path / "submissions.json")
 
 
 @pytest.fixture
-def client(store: SubmissionStore):
+def client(store: SubmissionStore, monkeypatch):
+    monkeypatch.setenv("ADMIN_TOKEN", "test-admin-token")
     app.dependency_overrides[get_store] = lambda: store
     try:
         yield TestClient(app)
@@ -58,7 +62,7 @@ def test_catalog_includes_only_approved_unverified_submissions(client: TestClien
             "destination_id": "DST-TG-0001",
         },
     ).json()
-    assert client.patch(f"/api/submissions/{approved_sub['id']}/approve").status_code == 200
+    assert client.patch(f"/api/submissions/{approved_sub['id']}/approve", headers=ADMIN_HEADERS).status_code == 200
 
     catalog = client.get("/api/catalog")
     assert catalog.status_code == 200
@@ -97,7 +101,7 @@ def test_existing_point_discovery_and_community_destination(client: TestClient):
             "longitude": 79.1180,
         },
     ).json()
-    assert client.patch(f"/api/submissions/{sub['id']}/approve").status_code == 200
+    assert client.patch(f"/api/submissions/{sub['id']}/approve", headers=ADMIN_HEADERS).status_code == 200
 
     after = client.get("/api/discover?destination=DST-TG-0001&radius_km=10&category=attractions")
     assert after.status_code == 200
@@ -121,7 +125,7 @@ def test_route_discovery_corridor_anchors_duplicates_and_filters(client: TestCli
             "destination_id": "DST-TG-0001",
         },
     ).json()
-    assert client.patch(f"/api/submissions/{craft_sub['id']}/approve").status_code == 200
+    assert client.patch(f"/api/submissions/{craft_sub['id']}/approve", headers=ADMIN_HEADERS).status_code == 200
 
     # 2. Approved cultural experience anchored via canonical craft_id (CRF-TG-0001 -> DST-TG-0001)
     exp_sub = client.post(
@@ -135,7 +139,21 @@ def test_route_discovery_corridor_anchors_duplicates_and_filters(client: TestCli
             "craft_id": "CRF-TG-0001",
         },
     ).json()
-    assert client.patch(f"/api/submissions/{exp_sub['id']}/approve").status_code == 200
+    assert client.patch(f"/api/submissions/{exp_sub['id']}/approve", headers=ADMIN_HEADERS).status_code == 200
+
+    # 2b. Approved community food anchored via canonical destination_id (DST-TG-0001)
+    food_sub = client.post(
+        "/api/submissions",
+        json={
+            "name": "Pembarthi Heritage Meal",
+            "description": "Community food listing linked to DST-TG-0001.",
+            "submission_type": "food",
+            "state": "Telangana",
+            "district": "Jangaon",
+            "destination_id": "DST-TG-0001",
+        },
+    ).json()
+    assert client.patch(f"/api/submissions/{food_sub['id']}/approve", headers=ADMIN_HEADERS).status_code == 200
 
     # 3. Unlocated community listing (no coordinates and no destination_id/craft_id)
     unlocated_sub = client.post(
@@ -148,7 +166,7 @@ def test_route_discovery_corridor_anchors_duplicates_and_filters(client: TestCli
             "district": "Jangaon",
         },
     ).json()
-    assert client.patch(f"/api/submissions/{unlocated_sub['id']}/approve").status_code == 200
+    assert client.patch(f"/api/submissions/{unlocated_sub['id']}/approve", headers=ADMIN_HEADERS).status_code == 200
 
     # 4. Confirmed duplicate of canonical destination DST-TG-0001
     dup_sub = client.post(
@@ -166,6 +184,7 @@ def test_route_discovery_corridor_anchors_duplicates_and_filters(client: TestCli
     assert (
         client.patch(
             f"/api/submissions/{dup_sub['id']}/approve",
+            headers=ADMIN_HEADERS,
             json={"canonical_record_id": "DST-TG-0001"},
         ).status_code
         == 200
@@ -217,6 +236,10 @@ def test_route_discovery_corridor_anchors_duplicates_and_filters(client: TestCli
     assert exp_sub["id"] in exp_ids
 
     food_ids = [item["record"].get("food_id") or item["record"].get("id") for item in data["results"]["food"]]
+    assert food_sub["id"] in food_ids
+    food_hit = next(item for item in data["results"]["food"] if item["record"].get("id") == food_sub["id"])
+    assert food_hit["record"]["verification_status"] == "community_approved_unverified"
+    assert food_hit["record"]["verified"] is False
     assert unlocated_sub["id"] not in food_ids
 
     # Category filters
@@ -298,3 +321,99 @@ def test_route_discovery_empty_coverage_and_validation(client: TestClient):
         },
     )
     assert unknown.status_code == 404
+
+
+def test_point_discovery_integrates_approved_food_craft_culture(client: TestClient):
+    # Pending submission must stay excluded
+    pending_food = client.post(
+        "/api/submissions",
+        json={
+            "name": "Pending Pembarthi Snack",
+            "description": "Not approved yet.",
+            "submission_type": "food",
+            "state": "Telangana",
+            "district": "Jangaon",
+            "destination_id": "DST-TG-0001",
+        },
+    ).json()
+
+    # Approved food via destination_id
+    approved_food = client.post(
+        "/api/submissions",
+        json={
+            "name": "Pembarthi Millet Meal",
+            "description": "Approved community food near Pembarthi.",
+            "submission_type": "food",
+            "state": "Telangana",
+            "district": "Jangaon",
+            "destination_id": "DST-TG-0001",
+        },
+    ).json()
+    assert client.patch(f"/api/submissions/{approved_food['id']}/approve", headers=ADMIN_HEADERS).status_code == 200
+
+    # Approved craft via own coordinates
+    approved_craft = client.post(
+        "/api/submissions",
+        json={
+            "name": "Pembarthi Hammered Bell Craft",
+            "description": "Approved craft with coordinates.",
+            "submission_type": "craft",
+            "state": "Telangana",
+            "district": "Jangaon",
+            "latitude": 17.6905,
+            "longitude": 79.1180,
+        },
+    ).json()
+    assert client.patch(f"/api/submissions/{approved_craft['id']}/approve", headers=ADMIN_HEADERS).status_code == 200
+
+    # Approved cultural experience via canonical craft_id (CRF-TG-0001 -> DST-TG-0001)
+    approved_exp = client.post(
+        "/api/submissions",
+        json={
+            "name": "Pembarthi Artisan Storytelling",
+            "description": "Approved experience linked through CRF-TG-0001.",
+            "submission_type": "cultural_experience",
+            "state": "Telangana",
+            "district": "Jangaon",
+            "craft_id": "CRF-TG-0001",
+        },
+    ).json()
+    assert client.patch(f"/api/submissions/{approved_exp['id']}/approve", headers=ADMIN_HEADERS).status_code == 200
+
+    # Unlocated approved submission must stay omitted from spatial discovery
+    unlocated_food = client.post(
+        "/api/submissions",
+        json={
+            "name": "Unlocated Telangana Sweet",
+            "description": "No coordinates or relationship link.",
+            "submission_type": "food",
+            "state": "Telangana",
+            "district": "Jangaon",
+        },
+    ).json()
+    assert client.patch(f"/api/submissions/{unlocated_food['id']}/approve", headers=ADMIN_HEADERS).status_code == 200
+
+    resp = client.get("/api/discover?destination=DST-TG-0001&radius_km=10")
+    assert resp.status_code == 200
+    res = resp.json()["results"]
+
+    food_ids = [item["record"].get("food_id") or item["record"].get("id") for item in res["food"]]
+    assert approved_food["id"] in food_ids
+    assert pending_food["id"] not in food_ids
+    assert unlocated_food["id"] not in food_ids
+
+    craft_ids = [item["record"].get("craft_id") or item["record"].get("id") for item in res["crafts"]]
+    assert approved_craft["id"] in craft_ids
+
+    exp_ids = [item["record"].get("experience_id") or item["record"].get("id") for item in res["cultural_experiences"]]
+    assert approved_exp["id"] in exp_ids
+
+    for item_id, group in [
+        (approved_food["id"], res["food"]),
+        (approved_craft["id"], res["crafts"]),
+        (approved_exp["id"], res["cultural_experiences"]),
+    ]:
+        hit = next(x for x in group if x["record"].get("id") == item_id)
+        assert hit["record"]["verification_status"] == "community_approved_unverified"
+        assert hit["record"]["verified"] is False
+

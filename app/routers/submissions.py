@@ -24,8 +24,8 @@ from app.services.submission_service import (
 from data_access import DATASETS, load_dataset
 
 ADMIN_NOTICE = (
-    "PROTOTYPE ONLY: protected by a shared ADMIN_TOKEN header only when the ADMIN_TOKEN "
-    "environment variable is set; open otherwise. Not production-grade security."
+    "PROTOTYPE ONLY: fail-closed shared ADMIN_TOKEN protection via X-Admin-Token. "
+    "Admin endpoints return 503 if ADMIN_TOKEN is unset or blank."
 )
 
 CANONICAL_ENTITY_TABLE = {
@@ -39,14 +39,17 @@ router = APIRouter(prefix="/api/submissions", tags=["Community submissions"])
 
 
 def require_admin(x_admin_token: str = Header(default="")) -> None:
-    """Protect admin routes when ADMIN_TOKEN is set in the environment.
+    """Fail-closed admin guard using the ADMIN_TOKEN environment variable.
 
-    If ADMIN_TOKEN is not set, behaviour is unchanged (open prototype mode),
-    so local development and existing tests keep working.
+    Refuses every request with HTTP 503 if ADMIN_TOKEN is unset or blank, and
+    returns HTTP 401 when X-Admin-Token does not match.
     """
-    expected = os.getenv("ADMIN_TOKEN", "")
+    expected = os.getenv("ADMIN_TOKEN", "").strip()
     if not expected:
-        return
+        raise HTTPException(
+            status_code=503,
+            detail="Admin access disabled: set the ADMIN_TOKEN environment variable on the server.",
+        )
     if not hmac.compare_digest(x_admin_token.encode(), expected.encode()):
         raise HTTPException(status_code=401, detail="Admin token required.")
 

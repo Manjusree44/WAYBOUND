@@ -29,13 +29,17 @@ def _app(store: SubmissionStore) -> FastAPI:
     return app
 
 
+ADMIN_HEADERS = {"X-Admin-Token": "test-admin-token"}
+
+
 @pytest.fixture
 def store(tmp_path: Path) -> SubmissionStore:
     return SubmissionStore(tmp_path / "submissions.json")
 
 
 @pytest.fixture
-def client(store: SubmissionStore) -> TestClient:
+def client(store: SubmissionStore, monkeypatch) -> TestClient:
+    monkeypatch.setenv("ADMIN_TOKEN", "test-admin-token")
     return TestClient(_app(store))
 
 
@@ -70,7 +74,7 @@ def test_submit_review_and_persist(client: TestClient, store: SubmissionStore):
     assert body["id"].startswith("SUB-")
     submission_id = body["id"]
 
-    pending = client.get("/api/submissions/pending")
+    pending = client.get("/api/submissions/pending", headers=ADMIN_HEADERS)
     assert pending.status_code == 200
     assert [item["id"] for item in pending.json()] == [submission_id]
 
@@ -78,7 +82,7 @@ def test_submit_review_and_persist(client: TestClient, store: SubmissionStore):
     assert approved_before.status_code == 200
     assert approved_before.json() == []
 
-    approved = client.patch(f"/api/submissions/{submission_id}/approve")
+    approved = client.patch(f"/api/submissions/{submission_id}/approve", headers=ADMIN_HEADERS)
     assert approved.status_code == 200
     assert approved.json()["status"] == "approved"
 
@@ -87,7 +91,7 @@ def test_submit_review_and_persist(client: TestClient, store: SubmissionStore):
     assert [item["id"] for item in public.json()] == [submission_id]
     assert public.json()[0]["status"] == "approved"
 
-    pending_after = client.get("/api/submissions/pending")
+    pending_after = client.get("/api/submissions/pending", headers=ADMIN_HEADERS)
     assert pending_after.json() == []
 
     rejected_response = client.post("/api/submissions", json=FOOD)
@@ -95,7 +99,7 @@ def test_submit_review_and_persist(client: TestClient, store: SubmissionStore):
     rejected_id = rejected_response.json()["id"]
     assert rejected_response.json()["status"] == "pending"
 
-    reject = client.patch(f"/api/submissions/{rejected_id}/reject")
+    reject = client.patch(f"/api/submissions/{rejected_id}/reject", headers=ADMIN_HEADERS)
     assert reject.status_code == 200
     assert reject.json()["status"] == "rejected"
 
@@ -117,7 +121,7 @@ def test_submit_review_and_persist(client: TestClient, store: SubmissionStore):
 
 
 def test_unknown_id_returns_404(client: TestClient):
-    missing = client.patch("/api/submissions/SUB-DOES-NOT-EXIST/approve")
+    missing = client.patch("/api/submissions/SUB-DOES-NOT-EXIST/approve", headers=ADMIN_HEADERS)
     assert missing.status_code == 404
     assert "No submission found" in missing.json()["detail"]
 
@@ -125,13 +129,13 @@ def test_unknown_id_returns_404(client: TestClient):
 def test_already_processed_returns_409(client: TestClient):
     created = client.post("/api/submissions", json=DESTINATION)
     submission_id = created.json()["id"]
-    assert client.patch(f"/api/submissions/{submission_id}/approve").status_code == 200
+    assert client.patch(f"/api/submissions/{submission_id}/approve", headers=ADMIN_HEADERS).status_code == 200
 
-    again = client.patch(f"/api/submissions/{submission_id}/approve")
+    again = client.patch(f"/api/submissions/{submission_id}/approve", headers=ADMIN_HEADERS)
     assert again.status_code == 409
     assert "already approved" in again.json()["detail"]
 
-    reject_after_approve = client.patch(f"/api/submissions/{submission_id}/reject")
+    reject_after_approve = client.patch(f"/api/submissions/{submission_id}/reject", headers=ADMIN_HEADERS)
     assert reject_after_approve.status_code == 409
     assert "already approved" in reject_after_approve.json()["detail"]
 
@@ -188,7 +192,7 @@ def test_empty_file_is_treated_as_no_submissions(store: SubmissionStore):
 def test_approved_endpoint_marks_community_unverified(client: TestClient):
     created = client.post("/api/submissions", json=DESTINATION)
     submission_id = created.json()["id"]
-    assert client.patch(f"/api/submissions/{submission_id}/approve").status_code == 200
+    assert client.patch(f"/api/submissions/{submission_id}/approve", headers=ADMIN_HEADERS).status_code == 200
 
     approved = client.get("/api/submissions/approved")
     assert approved.status_code == 200
@@ -231,6 +235,7 @@ def test_approve_with_canonical_record_id_validation(client: TestClient):
     # Wrong entity ID for destination submission must fail with 422 and keep it pending
     wrong_id = client.patch(
         f"/api/submissions/{dest_id}/approve",
+        headers=ADMIN_HEADERS,
         json={"canonical_record_id": "FOD-AP-0001"},
     )
     assert wrong_id.status_code == 422
@@ -238,6 +243,7 @@ def test_approve_with_canonical_record_id_validation(client: TestClient):
     # Valid canonical destination ID succeeds
     ok = client.patch(
         f"/api/submissions/{dest_id}/approve",
+        headers=ADMIN_HEADERS,
         json={"canonical_record_id": "DST-AP-0001"},
     )
     assert ok.status_code == 200

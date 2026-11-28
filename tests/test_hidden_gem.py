@@ -27,13 +27,17 @@ ROUTE_PAYLOAD = {
 }
 
 
+ADMIN_HEADERS = {"X-Admin-Token": "test-admin-token"}
+
+
 @pytest.fixture
 def store(tmp_path: Path) -> SubmissionStore:
     return SubmissionStore(tmp_path / "submissions.json")
 
 
 @pytest.fixture
-def client(store: SubmissionStore):
+def client(store: SubmissionStore, monkeypatch):
+    monkeypatch.setenv("ADMIN_TOKEN", "test-admin-token")
     app.dependency_overrides[get_store] = lambda: store
     try:
         yield TestClient(app)
@@ -142,7 +146,7 @@ def test_community_listings_always_stay_hidden_gem_false(
             "destination_id": "DST-TG-0001",
         },
     ).json()
-    assert client.patch(f"/api/submissions/{sub['id']}/approve").status_code == 200
+    assert client.patch(f"/api/submissions/{sub['id']}/approve", headers=ADMIN_HEADERS).status_code == 200
 
     # Even if an entry exists for a community ID, unverified listings must stay hidden_gem=False.
     evidence_file = tmp_path / "low_visibility_evidence.json"

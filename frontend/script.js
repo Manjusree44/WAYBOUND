@@ -1149,8 +1149,8 @@ async function runRouteDiscovery() {
 }
 
 // ------------------------------ Admin Review --------------------------------
-// Admin calls: if the server has ADMIN_TOKEN set it answers 401, so ask for the token once
-// (kept in memory only, never stored in the page or in localStorage).
+// Admin calls: the backend fails closed with 503 unless ADMIN_TOKEN is set on the server.
+// When set, the server returns 401 until the operator provides X-Admin-Token (kept in memory only).
 let adminToken = "";
 async function adminFetch(url, options = {}) {
   const attempt = () => fetch(url, {
@@ -1171,6 +1171,13 @@ async function loadPendingSubmissions() {
   try {
     const resp = await adminFetch(`${API_BASE}/api/submissions/pending`, { cache: "no-store" });
     const items = await resp.json();
+    if (resp.status === 503) {
+      if (countEl) countEl.textContent = "0";
+      if (listEl) {
+        listEl.innerHTML = `<div class="card"><p class="muted">${esc(items.detail || "Admin access disabled: set the ADMIN_TOKEN environment variable on the server.")}</p></div>`;
+      }
+      return;
+    }
     if (!resp.ok) throw new Error(items.detail || `HTTP ${resp.status}`);
     if (countEl) countEl.textContent = String(items.length);
     if (!listEl) return;
