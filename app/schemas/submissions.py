@@ -195,8 +195,8 @@ class ApproveSubmissionRequest(BaseModel):
         return cleaned or None
 
 
-class SubmissionRead(BaseModel):
-    """A stored submission returned by the API."""
+class _SubmissionPublicBase(BaseModel):
+    """Shared submission fields safe for public responses (excludes contact)."""
 
     model_config = ConfigDict(extra="ignore")
 
@@ -209,7 +209,6 @@ class SubmissionRead(BaseModel):
     location: Optional[str] = None
     latitude: Optional[float] = None
     longitude: Optional[float] = None
-    contact: Optional[str] = None
     source: Optional[str] = None
     category: Optional[str] = None
     origin_place: Optional[str] = None
@@ -233,8 +232,14 @@ class SubmissionRead(BaseModel):
     updated_at: str
 
 
-class SubmissionApprovedRead(SubmissionRead):
-    """Approved submission returned on public listing endpoints."""
+class SubmissionRead(_SubmissionPublicBase):
+    """Full stored submission returned to submitters and admin review."""
+
+    contact: Optional[str] = None
+
+
+class SubmissionApprovedRead(_SubmissionPublicBase):
+    """Approved submission returned on public listing endpoints without contact."""
 
     verification_status: str = "community_approved_unverified"
     verified: bool = False

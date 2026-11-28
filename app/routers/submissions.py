@@ -58,6 +58,18 @@ def _storage_error(exc: SubmissionStorageError) -> HTTPException:
     return HTTPException(status_code=500, detail=str(exc))
 
 
+SUBMISSION_REFERENCE_FIELDS = (
+    ("destination_id", "destinations", "destination_id"),
+    ("craft_id", "crafts", "craft_id"),
+    ("gi_id", "gi_products", "gi_id"),
+)
+
+
+def _canonical_ids(dataset_key: str, id_column: str) -> set[str]:
+    rows = load_dataset(DATASETS[dataset_key])
+    return {row.get(id_column, "").strip() for row in rows if row.get(id_column)}
+
+
 def _validate_canonical_record(submission_type: str, canonical_record_id: str) -> None:
     dataset_info = CANONICAL_ENTITY_TABLE.get(submission_type)
     if dataset_info is None:
@@ -65,13 +77,23 @@ def _validate_canonical_record(submission_type: str, canonical_record_id: str) -
             f"Unsupported submission_type '{submission_type}' for canonical linking."
         )
     dataset_key, id_column = dataset_info
-    rows = load_dataset(DATASETS[dataset_key])
-    valid_ids = {row.get(id_column, "").strip() for row in rows if row.get(id_column)}
-    if canonical_record_id not in valid_ids:
+    if canonical_record_id not in _canonical_ids(dataset_key, id_column):
         raise InvalidCanonicalReferenceError(
             f"canonical_record_id '{canonical_record_id}' was not found in "
             f"{DATASETS[dataset_key]} for submission_type '{submission_type}'."
         )
+
+
+def _validate_submission_references(body: SubmissionCreate) -> None:
+    for field_name, dataset_key, id_column in SUBMISSION_REFERENCE_FIELDS:
+        ref_value = getattr(body, field_name)
+        if ref_value is None:
+            continue
+        if ref_value not in _canonical_ids(dataset_key, id_column):
+            raise HTTPException(
+                status_code=422,
+                detail=f"{field_name} '{ref_value}' was not found in {DATASETS[dataset_key]}.",
+            )
 
 
 @router.post(
@@ -85,6 +107,7 @@ def create_submission(
     store: SubmissionStore = Depends(get_store),
 ) -> SubmissionRead:
     """Save a destination, food, craft, or cultural experience as pending."""
+    _validate_submission_references(body)
     try:
         record = store.create(body.model_dump(mode="json"))
     except SubmissionStorageError as exc:

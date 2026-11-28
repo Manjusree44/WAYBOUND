@@ -417,3 +417,55 @@ def test_point_discovery_integrates_approved_food_craft_culture(client: TestClie
         assert hit["record"]["verification_status"] == "community_approved_unverified"
         assert hit["record"]["verified"] is False
 
+
+def test_contact_excluded_from_catalog_discover_and_route(client: TestClient):
+    sub = client.post(
+        "/api/submissions",
+        json={
+            "name": "Pembarthi Private Contact Food",
+            "description": "Tests contact stripping across public discovery endpoints.",
+            "submission_type": "food",
+            "state": "Telangana",
+            "district": "Jangaon",
+            "destination_id": "DST-TG-0001",
+            "contact": "private-vendor@example.com",
+        },
+    ).json()
+    assert client.patch(f"/api/submissions/{sub['id']}/approve", headers=ADMIN_HEADERS).status_code == 200
+
+    catalog = client.get("/api/catalog").json()
+    catalog_hit = next(
+        item for item in catalog["approved_community_submissions"]
+        if item["id"] == sub["id"]
+    )
+    assert "contact" not in catalog_hit
+
+    discover = client.get("/api/discover?destination=DST-TG-0001&radius_km=10").json()
+    discover_hit = next(
+        item for item in discover["results"]["food"]
+        if item["record"].get("id") == sub["id"]
+    )
+    assert "contact" not in discover_hit["record"]
+
+    route = client.post(
+        "/api/discover/route",
+        json={
+            "starting_town": {"name": "Hyderabad"},
+            "popular_destination": {"destination_id": "DST-AP-0003", "name": "Araku Valley"},
+            "route_geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [78.4867, 17.3850],
+                    [79.11758, 17.6895],
+                    [82.8667, 18.3333],
+                ],
+            },
+            "corridor_width_km": 25,
+        },
+    ).json()
+    route_hit = next(
+        item for item in route["results"]["food"]
+        if item["record"].get("id") == sub["id"]
+    )
+    assert "contact" not in route_hit["record"]
+

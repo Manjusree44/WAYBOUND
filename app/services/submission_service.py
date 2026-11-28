@@ -63,9 +63,10 @@ def _utc_now() -> str:
 
 
 def enrich_approved_submission(record: dict) -> dict:
-    """Attach additive public safety flags without claiming factual verification."""
+    """Attach additive public safety flags and strip private submitter contact."""
+    public_record = {k: v for k, v in record.items() if k != "contact"}
     return {
-        **record,
+        **public_record,
         "verification_status": "community_approved_unverified",
         "verified": False,
     }

@@ -250,3 +250,76 @@ def test_approve_with_canonical_record_id_validation(client: TestClient):
     assert ok.json()["status"] == "approved"
     assert ok.json()["canonical_record_id"] == "DST-AP-0001"
 
+
+def test_contact_visible_only_on_pending_and_absent_from_approved(client: TestClient):
+    created = client.post(
+        "/api/submissions",
+        json={**FOOD, "contact": "submitter-private@example.com"},
+    )
+    assert created.status_code == 201
+    sub_id = created.json()["id"]
+
+    pending = client.get("/api/submissions/pending", headers=ADMIN_HEADERS)
+    assert pending.status_code == 200
+    assert pending.json()[0]["contact"] == "submitter-private@example.com"
+
+    assert client.patch(f"/api/submissions/{sub_id}/approve", headers=ADMIN_HEADERS).status_code == 200
+
+    approved = client.get("/api/submissions/approved")
+    assert approved.status_code == 200
+    assert len(approved.json()) == 1
+    assert "contact" not in approved.json()[0]
+
+
+def test_submission_rejects_nonexistent_canonical_references(client: TestClient):
+    bad_dest = client.post(
+        "/api/submissions",
+        json={**FOOD, "destination_id": "DST-XX-9999"},
+    )
+    assert bad_dest.status_code == 422
+    assert "destination_id" in bad_dest.json()["detail"]
+
+    bad_craft = client.post(
+        "/api/submissions",
+        json={
+            "name": "Fake Craft Link",
+            "description": "Invalid craft reference.",
+            "submission_type": "cultural_experience",
+            "state": "Telangana",
+            "district": "Jangaon",
+            "craft_id": "CRF-XX-9999",
+        },
+    )
+    assert bad_craft.status_code == 422
+    assert "craft_id" in bad_craft.json()["detail"]
+
+    bad_gi = client.post(
+        "/api/submissions",
+        json={**FOOD, "gi_id": "GI-99999"},
+    )
+    assert bad_gi.status_code == 422
+    assert "gi_id" in bad_gi.json()["detail"]
+
+    ok_dest = client.post("/api/submissions", json={**FOOD, "destination_id": "DST-TG-0001"})
+    assert ok_dest.status_code == 201
+
+    ok_craft = client.post(
+        "/api/submissions",
+        json={
+            "name": "Valid Craft Link",
+            "description": "Valid craft reference.",
+            "submission_type": "cultural_experience",
+            "state": "Telangana",
+            "district": "Jangaon",
+            "craft_id": "CRF-TG-0001",
+        },
+    )
+    assert ok_craft.status_code == 201
+
+    ok_gi = client.post("/api/submissions", json={**FOOD, "gi_id": "GI-0002"})
+    assert ok_gi.status_code == 201
+
+    ok_blank = client.post("/api/submissions", json={**FOOD, "destination_id": "   "})
+    assert ok_blank.status_code == 201
+    assert ok_blank.json()["destination_id"] is None
+
